@@ -7,10 +7,13 @@ const app = express();
 app.use(bodyParser.json());
 
 // Database setup
-const sequelize = new Sequelize("postgresql://test_nq2p_user:jgICFMuHQqYbjcblCvCkjVSJx7VGZw0L@dpg-cu7f0clumphs73d5ieu0-a/test_nq2p:5432/test", {
+const sequelize = new Sequelize("postgresql://test_nq2p_user:jgICFMuHQqYbjcblCvCkjVSJx7VGZw0L@dpg-cu7f0clumphs73d5ieu0-a:5432/test_nq2p", {
   dialect: 'postgres',
   dialectModule: pg
 });
+
+// DB_URL=postgres://username:password@host:port/dbname
+// postgresql://test_nq2p_user:jgICFMuHQqYbjcblCvCkjVSJx7VGZw0L@dpg-cu7f0clumphs73d5ieu0-a/test_nq2p
 
 const Doctor = sequelize.define("Doctor", {
   name: { type: DataTypes.STRING, allowNull: false },

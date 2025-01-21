@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // Database setup
-const sequelize = new Sequelize("postgresql://test_nq2p_user:jgICFMuHQqYbjcblCvCkjVSJx7VGZw0L@dpg-cu7f0clumphs73d5ieu0-a/test_nq2p:5432", {
+const sequelize = new Sequelize("postgresql://test_nq2p_user:jgICFMuHQqYbjcblCvCkjVSJx7VGZw0L@dpg-cu7f0clumphs73d5ieu0-a/test_nq2p:5432/test", {
   dialect: 'postgres',
   dialectModule: pg
 });

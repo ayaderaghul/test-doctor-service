@@ -1,3 +1,17 @@
-"scripts": {
-  "start": "node doctor-service.js"
+{
+  "name": "doctor-booking-app",
+  "version": "1.0.0",
+  "description": "A doctor booking app with microservice architecture",
+  "main": "server.js",
+  "scripts": {
+    "start": "node doctor-service.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "sequelize": "^6.31.0",
+    "mysql2": "^3.5.0",
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "^9.0.0"
+  }
 }

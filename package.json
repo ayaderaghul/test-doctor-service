@@ -12,6 +12,7 @@
     "sequelize": "^6.31.0",
     "mysql2": "^3.5.0",
     "bcrypt": "^5.1.0",
-    "jsonwebtoken": "^9.0.0"
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.11.0"
   }
 }

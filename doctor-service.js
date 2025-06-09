@@ -12,7 +12,7 @@ app.use(cors());
 
 
 // Database setup
-const sequelize = new Sequelize("postgresql://test_nq2p_user:jgICFMuHQqYbjcblCvCkjVSJx7VGZw0L@dpg-cu7f0clumphs73d5ieu0-a:5432/test_nq2p", {
+const sequelize = new Sequelize("postgresql://doctordb_vna3_user:jgICFMuHQqYbjcblCvCkjVSJx7VGZw0L@dpg-cu7f0clumphs73d5ieu0-a:5432/test_nq2p", {
   dialect: 'postgres',
   dialectModule: pg
 });
